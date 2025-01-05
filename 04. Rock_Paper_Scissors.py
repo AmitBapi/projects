@@ -33,13 +33,12 @@ scissors = ('''
     ''')
 
 game_images = [rock, paper, scissors]
+
 user_choice = int(input("Enter your choice: "))
 if user_choice >=0 and user_choice <=2:
-    print("you choose ", game_images[user_choice])
-    print(game_images[user_choice])
+    print("you choose \n", game_images[user_choice])
 computer_choice = random.randint(0, 2)
-print("Computer choose ", game_images[computer_choice])
-print(game_images[computer_choice])
+print("Computer choose \n", game_images[computer_choice])
 
 if (user_choice >=2 or user_choice <0):
     print("Invalid choice. Please enter a number between 0 and 2.")
@@ -47,7 +46,9 @@ if (user_choice >=2 or user_choice <0):
 elif (user_choice==computer_choice):
     print("match draw")
     exit()
-elif ((user_choice==0 and computer_choice==2) or (user_choice==1 and computer_choice==0) or (user_choice==2 and computer_choice==1)):
+elif ((user_choice==0 and computer_choice==2) or 
+      (user_choice==1 and computer_choice==0) or 
+      (user_choice==2 and computer_choice==1)):
     print("You win!")
     exit()
 else:
@@ -55,3 +56,43 @@ else:
     exit()
 
 
+#or
+# user_choice = int(input("Enter your choice: "))
+# computer_choice = random.randint(0, 2)
+
+# if user_choice==0:
+#     print("You chose rock.\n", rock)
+#     if computer_choice==0:
+#         print("Computer chose rock. It's a tie!\n", rock)
+#         exit()
+#     elif computer_choice==1:
+#         print("Computer chose paper. You lose!\n", paper)
+#         exit()
+#     else:
+#         print("Computer chose scissors. You win!\n", scissors)
+#         exit()
+# elif user_choice==1:
+#     print("You chose paper.\n", paper)
+#     if computer_choice==0:
+#         print("Computer chose rock. You win!\n", rock)
+#         exit()
+#     elif computer_choice==1:
+#         print("Computer chose paper. It's a tie!\n", paper)
+#         exit()
+#     else:
+#         print("Computer chose scissors. You lose!\n", scissors)
+#         exit()
+# elif user_choice==2:
+#     print("You chose scissors.\n",scissors)
+#     if computer_choice==0:
+#         print("Computer chose rock. You lose!\n",rock)
+#         exit()
+#     elif computer_choice==1:
+#         print("Computer chose paper. You win!\n", paper)
+#         exit()
+#     else:
+#         print("Computer chose scissors. It's a tie!\n", scissors)
+#         exit()
+# else:
+#     print("Invalid choice. Please try again.")
+#     exit()
