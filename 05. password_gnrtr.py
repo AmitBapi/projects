@@ -22,7 +22,7 @@ for i in range(0, letters):
 for i in range(0, special):
     password_ls.append(random.choice(special_ls))
 
-print(password_ls)
+# print(password_ls)
 random.shuffle(password_ls)
 
 password = ""
