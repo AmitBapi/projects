@@ -34,7 +34,6 @@ def ceaser(orginal_text, shift_amount, encode_or_decode):
                 shifted_position = alphabet.index(letter)-shift_amount
             elif encode_or_decode == "encode":
                 shifted_position = alphabet.index(letter)+shift_amount
-            
             else:
                 print("you entered a wrong option!!!")
                 exit()
