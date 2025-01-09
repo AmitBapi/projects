@@ -33,7 +33,6 @@ def ceaser(orginal_text, shift_amount, encode_or_decode):
             # shift_amount*= -1
                 shifted_position = alphabet.index(letter)-shift_amount
             elif encode_or_decode == "encode":
-                # shift_amount*= +1
                 shifted_position = alphabet.index(letter)+shift_amount
             
             else:
